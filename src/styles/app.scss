@@ -1,8 +1,12 @@
 body {
-  background: white;
+  background: #888888;
 }
 
-h2 {
-  font-weight: 100;
-  color: #555555;
+#title {
+  h2 {
+    font-weight: 100;
+    color: #eaeaea;
+  }
+
+  text-align: center;
 }

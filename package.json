@@ -2,7 +2,7 @@
   "name": "cywidget-sample-app",
   "version": "0.0.1",
   "description": "Sample web application uisng network widget",
-  "main": "build/index.js",
+  "main": "build/app.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --content-base build",
     "build": "webpack --progress --colors",
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "cyto-framework": "0.0.4",
-    "cytoscape": "^2.6.3"
+    "cywidget-network": "0.0.20"
   },
   "devDependencies": {
     "babel-core": "^6.3.21",
