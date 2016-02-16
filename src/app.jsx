@@ -1,10 +1,10 @@
 import CytoFramework from 'cyto-framework'
-import {CyNetworkWidget, graph} from 'cywidget-network'
+import {graphReducer, CyNetworkWidget} from 'cywidget-network'
 
 require("./styles/app.scss");
 
 // 1. Create an instance of CytoFramework and pass reducers
-var cy = new CytoFramework({graph});
+var cy = new CytoFramework({graphReducer});
 
 // 2. Prepare parameters for the widget
 var props = {

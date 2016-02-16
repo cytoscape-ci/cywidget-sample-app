@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "cyto-framework": "0.0.4",
-    "cywidget-network": "0.0.20"
+    "cywidget-network": "0.0.25"
   },
   "devDependencies": {
     "babel-core": "^6.3.21",
