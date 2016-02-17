@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100,700);
+
+body {
+  font-family: Roboto, sans-serif;
+  background: white;
+}
+
+.container {
+  margin: 0.5em;
+
+  h2 {
+    font-weight: 700;
+    font-family: Roboto, sans-serif;
+    color: #333333;
+    font-size: 2em;
+  }
+}
+
+#widget-network-1 {
+  padding: 2px;
+  background-color: teal;
+}
+
