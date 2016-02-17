@@ -47,6 +47,8 @@ Type ```npm run build``` to build a new application.  It will creates a new file
 
 ![](images/demo1.png)
 
+* [Demo Page](http://chianti.ucsd.edu/~kono/ci/app/net-widget-1/)
+
 This is the _Hello-World_ project for all CyWidget users.  It simply visualizes network data from external data source.  Please read _app.jsx_ code first.  You will learn how to use CyWidgets by reading the code and comments in the file.    
 
 ### 2. Use with other components
