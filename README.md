@@ -52,7 +52,12 @@ Type ```npm run build``` to build a new application.  It will creates a new file
 This is the _Hello-World_ project for all CyWidget users.  It simply visualizes network data from external data source.  Please read _app.jsx_ code first.  You will learn how to use CyWidgets by reading the code and comments in the file.    
 
 ### 2. Use with other components
-(TBD)
+
+![](images/demo2.png)
+
+* [Demo Page](http://chianti.ucsd.edu/~kono/ci/app/net-widget-2/)
+
+This example demonstrates how to use the widget with other standard JavaScript code and CSS frameworks.  In this example, basic layout is controlled by [Material Design Lite](http://getmdl.io/index.html) framework.  You can pass parameters from those 3rd party components and pass them to the widget as parameters. 
 
 ### 3. Using events
 (TBD)
