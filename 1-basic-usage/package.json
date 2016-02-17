@@ -1,28 +1,22 @@
 {
-  "name": "cywidget-sample-app",
-  "version": "0.0.1",
-  "description": "Sample web application uisng network widget",
+  "name": "cywidget-sample-app-1",
+  "version": "0.0.2",
+  "description": "Simple web application uisng network widget",
   "main": "build/app.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --content-base build",
     "build": "webpack --progress --colors",
     "clean": "rm build/app.js"
   },
-  "babel": {
-    "plugins": [
-      "transform-object-rest-spread"
-    ]
-  },
   "dependencies": {
     "cyto-framework": "0.0.4",
-    "cywidget-network": "0.0.25"
+    "cywidget-network": "0.0.30"
   },
   "devDependencies": {
     "babel-core": "^6.3.21",
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
-    "babel-plugin-transform-object-rest-spread": "^6.5.0",
     "css-loader": "^0.23.0",
     "file-loader": "^0.8.5",
     "node-sass": "^3.4.2",
