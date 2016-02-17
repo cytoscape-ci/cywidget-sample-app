@@ -1,5 +1,4 @@
-# 2. Multiple Components
+# Sample 2: Using with other elements
 
-(TBD)
-NOT READY YET!
+A bit more realistic example using Material UI and simple JavaScript code.
 

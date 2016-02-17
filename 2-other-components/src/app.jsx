@@ -1,31 +1,44 @@
 /**
- * Sample Web Application to Display Cytoscape.js Network
+ * More realistic example: Connect to other components
  */
-
-// 0-1. Import the Framework
 import CytoFramework from 'cyto-framework'
-
-// 0-2. Import reducer and container of the Widget
 import {graphReducer, CyNetworkWidget} from 'cywidget-network'
+import 'material-design-lite'
 
-// 0-3. Import SCSS style file for this application
-require("./styles/app.scss");
+require('./styles/app.scss');
+require('material-design-lite/material.min.css');
 
-// 1. Create an instance of CytoFramework and pass reducers
-var cy = new CytoFramework({graphReducer});
+const ENDPOINT = 'http://ci-dev-serv.ucsd.edu:3001/ndex2cyjs/';
 
-// 2. Prepare parameters for the widget
-var props = {
-  // Location of the Cytoscape.js network (SHOULD BE ACCESSIBLE VIA CORS)
-  networkLocation: 'http://ci-dev-serv.ucsd.edu:3001/ndex2cyjs/94df1206-ce84-11e5-83ca-0251251672f9',
-  width: '100%', // Width of Canvas
-  height: '750px', // Height of Canvas
-  background: '#FAFAFA' // Background Color of Canvas
-};
+const cy = new CytoFramework({graphReducer});
 
-// 3. Render widget
-cy.render(
-  document.getElementById('widget-network-1'), // ID of the tag in the base HTML (build/index.html)
-  CyNetworkWidget, // Widget container
-  props
-);
+// If user click the
+document.getElementById('visualize')
+  .addEventListener("click", (evt) => {
+    'use strict';
+    let ndexId = document.getElementById('ndexId').value;
+    if (ndexId !== null && ndexId !== undefined && ndexId !== '') {
+      document.getElementById('networkId').innerHTML = "NDEx ID: " + ndexId;
+      renderNetwork(ndexId);
+    }
+  });
+
+
+function renderNetwork(ndexId) {
+  let props = {
+    networkLocation: ENDPOINT + ndexId,
+    width: '100%', // Width of Canvas
+    height: '700px', // Height of Canvas
+    background: '#FAFAFA' // Background Color of Canvas
+  };
+
+  cy.render(
+    document.getElementById('widget-network-1'), // ID of the tag in the base HTML (build/index.html)
+    CyNetworkWidget, // Widget container
+    props
+  );
+}
+
+
+
+

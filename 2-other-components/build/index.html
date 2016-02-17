@@ -8,10 +8,33 @@
 
 <body>
 
+<header class="mdl-color--cyan-400 mdl-color-text--white">
+    <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Widget Demo 2: Using with other elements</span>
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <div class="mdl-textfield mdl-color-text--white">
+                <input class="mdl-textfield__input" type="text" id="ndexId">
+                <label class="mdl-textfield__label" for="ndexId">Enter NDEx ID...</label>
+            </div>
+        </div>
+        <button id="visualize"
+                class="mdl-button mdl-js-button mdl-button--raised mdl-color--white">
+            Visualize!
+        </button>
+    </div>
+</header>
 
-<div class="container">
-    <h2>Widget Demo 2: Multiple Components</h2>
-    <div id="widget-network-1"></div>
+
+<div class="mdl-grid">
+    <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+        <div class="mdl-card__title">
+            <h2 id="networkId" class="mdl-card__title-text">No network loaded</h2>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+            <div id="widget-network-1"></div>
+        </div>
+    </div>
 </div>
 
 <script src="app.js"></script>
