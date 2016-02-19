@@ -6,7 +6,53 @@ body {
   background: white;
 }
 
+#net-widget {
+  width: 49%;
+  padding: 0.2em;
+  float: left;
+}
+
+#prop-widget {
+  width: 49%;
+  padding: 0.2em;
+  float: right;
+}
+
+#widget-network, #widget-table {
+  border-style: solid;
+  border-color: grey;
+  border-width: 3px;
+}
+
 #widget-table {
-  background-color: #00acc1;
-  height: 200px;
+  border-color: lightgreen;
+  background-color: teal;
+  color: white;
+  height: 700px;
+  overflow: auto;
+
+  h2, h3 {
+    margin: 0;
+    color: lightgreen;
+    padding: 0.5em;
+    font-weight: 300;
+  }
+
+  .key-col {
+    width: 12em !important;
+  }
+
+  table {
+    padding: 0.5em;
+
+    tbody tr {
+      td {
+        padding: 0.5em;
+      }
+    }
+
+  }
+
+  font-weight: 300;
+  font-family: Roboto, sans-serif;
 }

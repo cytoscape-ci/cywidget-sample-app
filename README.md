@@ -59,5 +59,20 @@ This is the _Hello-World_ project for all CyWidget users.  It simply visualizes 
 
 This example demonstrates how to use the widget with other standard JavaScript code and CSS frameworks.  In this example, basic layout is controlled by [Material Design Lite](http://getmdl.io/index.html) framework.  You can pass parameters from those 3rd party components and pass them to the widget as parameters. 
 
-### 3. Using events
-(TBD)
+### 3. Multiple widgets sharing events
+![](images/demo3.png)
+
+* [Demo Page](http://chianti.ucsd.edu/~kono/ci/app/net-widget-3/)
+
+This is an example to demonstrate how multiple widgets work together to build an application.  You have to register both _reducers_ to use multiple widgets:
+
+```js
+const cy = new CytoFramework({graphReducer, tableReducer});
+```
+
+And then you can call _render_ runction to display widgets:
+
+```js
+cy.render(document.getElementById('widget-table'), CyPropTableWidget);
+cy.render(document.getElementById('widget-network'), CyNetworkWidget, props);
+```

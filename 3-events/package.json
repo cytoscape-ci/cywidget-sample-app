@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "cyto-framework": "0.0.4",
-    "cywidget-network": "0.0.30",
-    "cywidget-table": "0.0.1"
+    "cywidget-network": "0.0.31",
+    "cywidget-prop-table": "0.0.2"
   },
   "devDependencies": {
     "babel-core": "^6.3.21",
